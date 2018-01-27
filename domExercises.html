@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      section {
+        border-bottom: 1px solid black;
+      }
+    </style>
+    <title>Developer Tools Practice</title>
+  </head>
+  <body>
+
+    <section id="intro">
+      <h1 id="title">This is Developer Tools Practice</h1>
+
+      <p class="content">
+        For this exercise you will practice interacting with the DOM through the browser inpector. Go ahead and open this document in a Chrome browser, inspect the page and select the Elements tab. You will be using the Elements, Styles, and Sources windows in the inspector for these exercises.
+      </p>
+    </section>
+
+    <section id="exercise_one" class="content">
+      <h3>Exercise One</h3>
+      <p>In the Elements tab of the browser, find an element with an id of 'title'</p>
+      <ol>
+        <li>Select the element and change the text to 'I am a dev tools wizard!'</li>
+        <li>In the style tab, change the size of the font to 44px</li>
+        <li>Change the color to your favorite color</li>
+      </ol>
+    </section>
+
+    <section id="exercise_two" class="content">
+      <h3>Exercise Two</h3>
+      <p>Find an element with an id of 'exercise_two'</p>
+
+      <ol>
+        <li>Right click the element and select 'Edit as HTML'</li>
+        <li>Add a label above the input tags with the text 'Label your inputs!'</li>
+        <li>Add tags to the word 'Label' in the text to make it bold</li>
+        <li>Add tags to the word 'Label' in the text to make it italicized</li>
+      </ol>
+
+      <input type="text" value=47>
+      <p>The the input value is: <span id="result"><span></p>
+    </section>
+
+    <section class="content">
+      <h3>Exercise Three</h3>
+      <p>Find the text input element on the page</p>
+
+      <ol>
+        <li>Give the text input an id of 'userIn'</li>
+        <li>Find and click the Sources tab in Developer Tools</li>
+        <li>Click add snippet</li>
+        <li>Write a function in the snippet that saves the input value into a variable called 'myInput', checks to see if it is even, and sets it as the inner html of element with the id of 'result'</li>
+        <li>Call the function in the snippet</li>
+        <li>Click the play icon at the bottom of the snippet window or hit command+enter</li>
+      </ol>
+    </section>
+
+    <section class="content">
+      <h3>Exercise Four</h3>
+      <p>Find the button on the page</p>
+
+      <ol>
+        <li>Find and click the Sources tab in Developer Tools</li>
+        <li>Click add snippet</li>
+        <li>Write a function that selects all the elements with the class of 'content' and assigns the inner html of each element to "&lt;p&gt;I control all the things!!!&lt;/p&gt;"</li>
+        <li>Click the play icon at the bottom of the snippet window or hit command+enter</li>
+        <li>In the Elements tab, add an onclick attribute to the button and set it to the name of your function</li>
+        <li>Click the button</li>
+      </ol>
+
+      <button>Mystery Button</button>
+
+      <br>
+      <br>
+    </section>
+
+  </body>
+</html>
