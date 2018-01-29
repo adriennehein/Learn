@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  font-family: garamond;
+  color: #004d66;
+}
+
+header { /*Affects the header of the page*/
+  margin: auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#headerTitle {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+body { /*Affects the entire body*/
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color: #e6e6e6;
+}
+
+.profile-section {
+  width: 45%;
+  border: 1px black dotted;
+  padding: 15px;
+  text-align: justify;
+  background-color: white;
+}
+
+.Jack { /*Jack's column*/
+  float: left;
+}
+
+.Adrienne { /*Adrienne's column*/
+  float: right;
+}
+
+#short {
+  padding-bottom: 36px;
+}
+
+.all-things {
+  border-left: 4px dashed grey;
+  height: 115%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 310px;
+
+}
+
+
+.top { /*Affects name orientation*/
+  text-align: center;
+}
+
+img.top { /*Affects image orientation*/
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#profile-a { /*Changes Adrienne's image size*/
+  height: 400px;
+  width: 400px;
+}
+
+nav li { /*Puts links in a line, gets rid of bullet points*/
+  display: inline-block;
+  list-style: none;
+}
+
+#tagline { /*spaces the tagline from the nav links*/
+  padding-bottom: 15px;
+}
+
+.nav-main li a { /*Affects the nav buttons at the top of the page*/
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* background-color: white; */
+}
+
+/* .nav-main a:hover {
+  background-color: red;
+} */
+
+nav ul { /*Allows us to center the links*/
+  padding: 0;
+}
+
+ul.local-nav { /*Centers and aligns individual navs*/
+  display: block;
+  padding: 0;
+  text-align: center;
+}
+
+.local-nav li a { /*spaces the links*/
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.bar::before {
+  border-bottom: 3px solid #FFF;
+  border-left: 3px solid #FFF;
+  -webkit-transform-origin: 100% 0%;
+}
+
+.bar::after {
+  border-top: 3px solid #FFF;
+  border-right: 3px solid #FFF;
+  -webkit-transform-origin: 0% 100%;
+}
+
+.box {
+  position:relative;
+  vertical-align: middle;
+  color: black;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 2px solid black;
+  -webkit-transition:0.5s;
+}
+
+.box:hover {
+  border: 2px solid white;
+  color: black;
+}
+
+.box::before, .box::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+.box:hover::after, .box:hover::before {
+  -webkit-transform: scale(1);
+}
