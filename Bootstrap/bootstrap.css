@@ -1,0 +1,11 @@
+.demo {
+  height: 500px;
+  width: auto;
+  align-items: center;
+}
+
+.carousel-inner img{
+  max-height: 400px;
+  margin: auto;
+
+}
